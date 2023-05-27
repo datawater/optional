@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - name: Test
-      run: git clone https://github.com/datawater/optional && cd optional && ./test.sh
+      run: git clone https://github.com/datawater/optional && cd optional && export CC=clang && ./test.sh
