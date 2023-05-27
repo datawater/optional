@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - name: Test
-      run: ./test.sh
+      run: pwd && ./test.sh
