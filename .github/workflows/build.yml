@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - name: Test
-      run: pwd && ls && ls -a && find ../ && ./test.sh
+      run: git clone https://github.com/datawater/optional && cd optional && ./test.sh
