@@ -1,0 +1,7 @@
+256
+-65536
+or None :(
+true
+true
+true
+false
