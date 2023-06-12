@@ -95,7 +95,7 @@ void* __unwrap_or__(Option* option, void* or) {
 void* __unwrap_or_else__(Option* option, void* (*closure)(void*)) {
     void* to_return = closure(option->some);
     
-    if (option->some == NULL || to_return == NULL) {
+    if (__unwrap__(option) == NULL || to_return == NULL) {
         fprintf(stderr, "PANIC. CALLED UNWRAP ON NONE\n");
         exit(1);
     }
